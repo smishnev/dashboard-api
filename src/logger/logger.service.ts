@@ -5,9 +5,9 @@ import 'reflect-metadata';
 
 @injectable()
 export class LoggerService implements ILogger {
-    public logger: Logger<unknown>;
+	public logger: Logger<unknown>;
 
-    constructor() {
+	constructor() {
 		this.logger = new Logger({
 			displayInstanceName: false,
 			displayLoggerName: false,
